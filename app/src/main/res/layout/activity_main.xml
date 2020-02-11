@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:id="@+id/et_add1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:hint=" ADD1:"
+                android:inputType="textPersonName"
+                android:textColorHint="#DFB6AE"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:hint="NAME:"
+                android:inputType="textPersonName"
+                android:textColorHint="#DFB6AE"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/et_readdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:hint="READDATE:"
+                android:inputType="textPersonName"
+                android:textColorHint="#DFB6AE"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/et_rrno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:hint="RRNO:"
+                android:inputType="textPersonName"
+                android:textColorHint="#DFB6AE"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/bt_insert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Insert"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/bt_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Get"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/bt_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="UPDATE"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="MissingConstraints" />
+
+
+                <Button
+                    android:id="@+id/bt_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Delete"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ormlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="InvalidId" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
